@@ -49,22 +49,25 @@ int main() {
             if (ID[i].id[j] < '0' || ID[i].id[j] > '9') {
                 ID[i].flag = false;
                 break;
-            } else
+            } else {
                 z += W[j] * (ID[i].id[j] - '0');
+            }
         }
         if (ID[i].flag == true) {
             z = z % 11;
-            if (ID[i].id[17] != M[z])
+            if (ID[i].id[17] != M[z]) {
                 ID[i].flag = false;
-            else
+            } else {
                 ++cnt;
+            }
         }
     }
-    if (cnt == n)
+    if (cnt == n) {
         cout << "All passed";
-    else {
-        for (int i = 0; i < n; ++i)
+    } else {
+        for (int i = 0; i < n; ++i) {
             if (ID[i].flag == false) cout << ID[i].id << endl;
+        }
     }
     return 0;
 }

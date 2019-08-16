@@ -20,7 +20,8 @@ int main() {
     int a[10] = {0};  //用数组a来存放每个数字出现的次数
     cin >> s;
     for (int i = 0; i < s.length(); ++i) a[s[i] - '0']++;
-    for (int i = 0; i < 10; ++i)
+    for (int i = 0; i < 10; ++i) {
         if (a[i] != 0) cout << i << ":" << a[i] << endl;
+    }
     return 0;
 }

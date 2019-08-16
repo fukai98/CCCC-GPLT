@@ -32,9 +32,9 @@ int main() {
             first = i;
         }
     }
-    if (first == 0)
+    if (first == 0) {
         cout << 1 << endl << n;
-    else {
+    } else {
         cout << len << endl;
         cout << first;
         for (int i = first + 1; i < first + len; ++i) {
