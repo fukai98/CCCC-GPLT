@@ -87,8 +87,8 @@ void MoreChange(string &s) {
     s = "";
     for (int i = 0; i < v.size(); ++i) {
         /*
-不能直接用一下注释中的方法，因为can和you不一定是单独存在的！！！
-可能会出现 ,can you,,,  这也要变为 ,I can,,,
+        不能直接用一下注释中的方法，因为can和you不一定是单独存在的！！！
+        可能会出现 ,can you,,,  这也要变为 ,I can,,,
         if(v[i] == "can" && v[i+1] == "you"){
             v[i] = "I";
             v[i+1] = "can";
@@ -100,7 +100,7 @@ void MoreChange(string &s) {
         } else if(v[i][0] == 'I' && !isalpha(v[i][1])) {
             v[i] = "you" + v[i].substr(1);
         }
-*/
+        */
         if (v[i].find("can") != string::npos &&
             v[i + 1].find("you") != string::npos &&
             !isalpha(v[i][v[i].find("can") - 1]) &&
